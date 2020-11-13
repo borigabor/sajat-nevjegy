@@ -6,16 +6,7 @@
   box-sizing: border-box;
   font-size: 100%;
 }
-.profile-card{
-  width: 680px;
-  max-width: calc(100vw - 10px);
-  background-color: hsla(0, 0%, 100%, .7);
-  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
-  border-left: 1px solid #635F64;
-  border-right: 1px solid #635F64;
-  border-radius:20px 20px 20px 20px;
-  
-}
+
 body{
   display: flex;
   justify-content: center;
@@ -27,16 +18,29 @@ body{
   color: rgba(0,0,0,.8);
   margin: 40px;
 }
-
+.profile-card{
+  width: 680px;
+  max-width: calc(100vw - 10px);
+  background-color: hsla(0, 0%, 100%, .7);
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  border-left: 1px solid #635F64;
+  border-right: 1px solid #635F64;
+  border-radius:20px 20px 20px 20px; 
+}
+#head-background img{
+  width: 680px;
+  height: auto;
+  border-radius:20px 20px 0 0;
+}
 .head, .links{
   text-align: center;
 }
 .content{
   border-top: 1px solid hsla(0, 0%, 30%, .8);
 }
-}
+
 .head, .content{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -57,11 +61,7 @@ body{
 .profile-image{
   margin-top: -110px;
 }
-#head-background img{
-  width: 680px;
-  height: auto;
-  border-radius:20px 20px 0 0;
-}
+
 h1{
   font-size: 30px;
   line-height: 1.5em;
@@ -104,13 +104,11 @@ a{
 #end{
   height: 29px;
   width: 680px;
-
   border-radius: 0 0 20px 20px;
 }
 @media only screen and (max-width: 800px) {
   body{
 background: url("assets/background.jpg");
-    size: 12px;
   }
   #head-background img{
     max-width: 100%;
@@ -118,6 +116,22 @@ background: url("assets/background.jpg");
   #head-profile img{
     max-width: 100%;
   }
-
-
+  .profile-card{
+    max-width: 80%;
+    position: absolute;
+    top: 10%;
+	left: 10%;
+  }
+  .button{
+    font-size: 10px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .about{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 15px;
+  }
 }
